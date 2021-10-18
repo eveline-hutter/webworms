@@ -5,7 +5,6 @@ import CreateGame from '@/views/CreateGame.vue'
 import JoinGame from '@/views/JoinGame.vue'
 import LevelEditor from '@/views/LevelEditor.vue'
 import Settings from '@/views/Settings.vue'
-import WaitingForPlayers from "@/views/WaitingForPlayers.vue";
 
 Vue.use(VueRouter)
 
@@ -34,11 +33,6 @@ const routes: Array<RouteConfig> = [
     path: '/settings',
     name: 'settings',
     component: Settings
-  },
-  {
-    path: '/waiting-for-players',
-    name: 'WaitingForPlayers',
-    component: WaitingForPlayers
   },
 ]
 

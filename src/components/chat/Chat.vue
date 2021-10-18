@@ -27,8 +27,8 @@
     <div>
       <v-card class="overflow-auto" height="400" width="500">
         <v-card-text>
-          <v-list v-if="messages.length > 0">
-            <v-list-item v-for="(message, index) in messages" :key="index">
+          <v-list v-if="getChats.length > 0">
+            <v-list-item v-for="(chat, index) in getChats" :key="index">
               <v-list-item-avatar>
                 <v-avatar
                     color="primary"
@@ -45,10 +45,10 @@
                   <v-chip label large color="primary">
                     BennyWorm:
                     <br/>
-                    {{ message.text }}
+                    {{ chat.message }}
                   </v-chip>
                 </v-list-item-title>
-                <v-list-item-subtitle>{{ message.date }}</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ chat.dateTime }}</v-list-item-subtitle>
               </v-list-item-content>
 
             </v-list-item>
@@ -82,37 +82,35 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, {PropType} from "vue";
+import {mapGetters} from "vuex";
+import Socket from "@/components/socket/Socket";
 
 export default Vue.extend({
   data() {
-    const socket = new WebSocket("ws://localhost:8080/chats/talk");
-    const messages: {text: string, date: string}[] = [];
-    const message = '';
-    const badge = false;
-    const menu = false;
-
     return {
-      socket,
-      messages,
-      message,
-      badge,
-      menu
+      message: '',
+      badge: false,
+      menu: false
     }
+  },
+
+  props: {
+    socket: {
+      type: Object as PropType<Socket>,
+      required: true
+    }
+  },
+
+  computed: {
+    ...mapGetters(["getChats"])
   },
 
   methods: {
-    handleMessage(message: string): void {
-      this.messages.push({text:message, date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`});
-      if (!this.menu) this.badge = true;
-    },
     sendMessage(): void {
-      this.socket.send(this.message);
+      this.socket.sendChat(this.message);
     }
   },
 
-  created() {
-    this.socket.onmessage = (message) => this.handleMessage(message.data);
-  }
 });
 </script>
