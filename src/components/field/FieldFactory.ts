@@ -1,5 +1,4 @@
 import Field from "@/components/field/Field";
-import Level from "@/components/level/Level";
 
 export default class FieldFactory {
     private fields: Field[][] = [];
@@ -31,15 +30,11 @@ export default class FieldFactory {
         };
     }
 
-    getFields(): Field[][] {
-        return this.fields;
+    setFields(fields: Field[][]): void {
+        this.fields = fields;
     }
 
-    makeJson(name: string, backGround: string): string {
-        const level: Level = {name, backGround, arena: this.fields}
-
-        console.log(JSON.stringify(level))
-
-        return JSON.stringify(this.fields)
+    getFields(): Field[][] {
+        return this.fields;
     }
 }

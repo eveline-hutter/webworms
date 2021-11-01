@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter, {RouteConfig} from 'vue-router'
 import Home from '../views/Home.vue'
-import CreateGame from '@/views/CreateGame.vue'
-import JoinGame from '@/views/JoinGame.vue'
-import LevelEditor from '@/views/LevelEditor.vue'
-import Settings from '@/views/Settings.vue'
+import Create from '@/views/Create.vue'
+import Fetch from '@/views/Fetch.vue'
+import Edit from '@/views/Edit.vue'
+import Game from "@/views/Game.vue";
 
 Vue.use(VueRouter)
 
@@ -15,24 +15,24 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: '/create-game',
-    name: 'createGame',
-    component: CreateGame
+    path: "/game",
+    name: "game",
+    component: Game,
   },
   {
-    path: '/join-game',
-    name: 'joinGame',
-    component: JoinGame
+    path: '/create',
+    name: 'create',
+    component: Create
   },
   {
-    path: '/level-editor',
-    name: 'levelEditor',
-    component: LevelEditor
+    path: '/fetch',
+    name: 'fetch',
+    component: Fetch
   },
   {
-    path: '/settings',
-    name: 'settings',
-    component: Settings
+    path: '/edit',
+    name: 'edit',
+    component: Edit
   },
 ]
 

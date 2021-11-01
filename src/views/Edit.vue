@@ -2,10 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-breadcrumbs
-            large
-            :items="breadCrumbs"
-        ></v-breadcrumbs>
+        <bread-crumbs value="edit" />
       </v-col>
     </v-row>
 
@@ -13,9 +10,9 @@
       <v-col cols="8">
           <v-card rounded="xl" elevation="10">
             <v-card-text>
-              <v-img contain :src="resourceDictionary.loadResource(selectedBackground).path()">
+              <v-img contain :src="loadFilePath(selectedBackground)">
                 <v-container>
-                  <v-row v-for="(fieldArray, rowIndex) in fieldFactory.getFields()" :key="rowIndex" no-gutters dense>
+                  <v-row v-for="(_, rowIndex) in fieldFactory.getFields()" :key="rowIndex" no-gutters dense>
                     <v-col v-for="(field, columnIndex) in fieldFactory.getFields()[rowIndex]" :key="columnIndex" cols="1">
                       <v-menu rounded="xl" max-height="400" max-width="300" offset-y>
                         <template v-slot:activator="{ on, attrs }">
@@ -23,7 +20,7 @@
                               v-if="field.obstacle"
                               v-bind="attrs"
                               v-on="on"
-                              :src="resourceDictionary.loadResource(field.obstacle.resourceId).path()"
+                              :src="loadFilePath(field.obstacle.resourceId)"
                               contain
                           />
                           <v-img
@@ -56,7 +53,7 @@
                               </v-row>
 
                               <v-row>
-                                <v-col v-for="(westernHouse, index) in resourceDictionary.getWesternHouses()" :key="index">
+                                <v-col v-for="(westernHouse, index) in getResourceDictionary.getWesternHouses()" :key="index">
                                   <v-card
                                       @click="fieldFactory.createObstacle(field, westernHouse.id)"
                                       height="50"
@@ -76,7 +73,7 @@
                               </v-row>
 
                               <v-row>
-                                <v-col v-for="(woodenHouse, index) in resourceDictionary.getWoodenHouses()" :key="index">
+                                <v-col v-for="(woodenHouse, index) in getResourceDictionary.getWoodenHouses()" :key="index">
                                   <v-card
                                       @click="fieldFactory.createObstacle(field, woodenHouse.id)"
                                       height="50"
@@ -105,6 +102,20 @@
             <v-container>
               <v-row>
                 <v-col>
+                  <v-select
+                      @change="changeArena"
+                      :items="getStorageHelper.getArenas()"
+                      item-text="name"
+                      return-object
+                      label="arena"
+                      rounded
+                      outlined
+                  />
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
                   <v-text-field
                       v-model="name"
                       label="name"
@@ -118,7 +129,7 @@
                 <v-col>
                   <v-select
                       v-model="selectedBackground"
-                      :items="resourceDictionary.getBackgrounds()"
+                      :items="getResourceDictionary.getBackgrounds()"
                       item-text="id"
                       item-value="id"
                       label="background"
@@ -128,23 +139,13 @@
                 </v-col>
               </v-row>
 
-              <v-row>
-
-                <!--
-
-                todo: load already created levels to edit them!
-
-                -->
-
-              </v-row>
-
               <v-row justify="space-between">
 
                   <v-btn color="error">
                     cancel
                   </v-btn>
 
-                  <v-btn @click="saveLevel" color="primary">
+                  <v-btn @click="saveArena" color="primary">
                     save
                   </v-btn>
 
@@ -154,45 +155,65 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col>
+        <v-dialog v-model="dialog">
+          do you really want to leave the page? you will lost everything!
+        </v-dialog>
+      </v-col>
+      <v-col>
+        <v-snackbar v-model="snackbar">
+          {{message}}
+        </v-snackbar>
+      </v-col>
+    </v-row>
   </v-container>
 
 </template>
 
 <script lang="ts">
-import Vue, {PropType} from 'vue'
+import Vue from 'vue'
 import FieldFactory from "@/components/field/FieldFactory";
-import ResourceDictionary from "@/assets/ResourceDictionary";
+import Arena from "@/components/game/Arena";
+import {mapGetters} from "vuex";
+import BreadCrumbs from "@/components/common/BreadCrumbs.vue";
 
 export default Vue.extend({
+  components: {BreadCrumbs},
   data() {
     return {
+      message: '',
+      snackbar: false,
+      dialog: false,
       name: '',
       fieldFactory: new FieldFactory(12, 12),
       selectedBackground: 'background_forest',
-      breadCrumbs: [
-      {text: 'Home', disabled: false, href: '/' },
-      {text: 'Level-Editor', disabled: true, href: '/level-editor'}
-    ]
     }
   },
 
-  props: {
-    resourceDictionary: {
-      type: Object as PropType<ResourceDictionary>,
-      required: true
-    }
+  computed: {
+    ...mapGetters(["getClient", "getResourceDictionary", "getStorageHelper"])
   },
 
   methods: {
-    saveLevel(): void {
-      const levelJson = this.fieldFactory.makeJson(this.name, this.selectedBackground);
+    loadFilePath(resourceId: string): string {
+      return this.getResourceDictionary.loadResource(resourceId).path();
+    },
+    changeArena(arena: Arena): void {
+      this.fieldFactory.setFields(arena.area);
+    },
+    saveArena(): void {
+      const arena = {} as Arena;
 
-      //let levels = localStorage.getItem("levels");
-      //levels = JSON.parse(levels);
+      arena.area = this.fieldFactory.getFields();
+      arena.name = this.name;
+      arena.background = this.selectedBackground;
 
-      localStorage.setItem("levels", levelJson)
+      this.getStorageHelper.storeArena(arena);
 
-      console.log(levelJson)
+      this.message = "successfully saved!"
+      this.snackbar = true;
     }
   },
 

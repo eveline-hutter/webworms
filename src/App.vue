@@ -1,5 +1,5 @@
 <template>
-  <v-app v-if="socket.isSetup">
+  <v-app v-if="isSetup">
     <v-app-bar
         app
         color="primary"
@@ -8,13 +8,10 @@
     >
       <v-toolbar-title>WebWorms</v-toolbar-title>
       <v-spacer></v-spacer>
-      <chat :socket="socket" />
+      <message />
     </v-app-bar>
     <v-main>
-      <router-view
-          :socket="socket"
-          :resource-dictionary="resourceDictionary"
-      />
+      <router-view/>
     </v-main>
 
     <v-snackbar :value="!getError.hidden" >
@@ -32,29 +29,16 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import Chat from "@/components/chat/Chat.vue";
-import Socket from "@/components/socket/Socket";
+import Message from "@/components/message/Message.vue";
 import {mapGetters} from "vuex";
-import ResourceDictionary from "@/assets/ResourceDictionary";
 
 export default Vue.extend({
   components: {
-    Chat
-  },
-
-  data() {
-    return {
-      socket: new Socket(),
-      resourceDictionary: new ResourceDictionary(),
-    }
+    Message
   },
 
   computed: {
-    ...mapGetters(["getError"])
+    ...mapGetters(["getError", "isSetup"])
   },
-
-  created() {
-    this.socket.setupSocket();
-  }
 });
 </script>

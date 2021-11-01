@@ -27,8 +27,8 @@
     <div>
       <v-card class="overflow-auto" height="400" width="500">
         <v-card-text>
-          <v-list v-if="getChats.length > 0">
-            <v-list-item v-for="(chat, index) in getChats" :key="index">
+          <v-list v-if="getMessages.length > 0">
+            <v-list-item v-for="(message, index) in getMessages" :key="index">
               <v-list-item-avatar>
                 <v-avatar
                     color="primary"
@@ -43,12 +43,12 @@
               <v-list-item-content>
                 <v-list-item-title>
                   <v-chip label large color="primary">
-                    BennyWorm:
+                    {{ message.user.name }}:
                     <br/>
-                    {{ chat.message }}
+                    {{ message.message }}
                   </v-chip>
                 </v-list-item-title>
-                <v-list-item-subtitle>{{ chat.dateTime }}</v-list-item-subtitle>
+                <v-list-item-subtitle>{{ message.dateTime }}</v-list-item-subtitle>
               </v-list-item-content>
 
             </v-list-item>
@@ -82,9 +82,10 @@
 </template>
 
 <script lang="ts">
-import Vue, {PropType} from "vue";
+import Vue from "vue";
 import {mapGetters} from "vuex";
-import Socket from "@/components/socket/Socket";
+import Request from "@/components/protocol/Request";
+import ProtocolType from "@/components/protocol/ProtocolType";
 
 export default Vue.extend({
   data() {
@@ -95,20 +96,25 @@ export default Vue.extend({
     }
   },
 
-  props: {
-    socket: {
-      type: Object as PropType<Socket>,
-      required: true
+  watch: {
+    getMessages(): void {
+      if (!this.menu)
+        this.badge = true;
     }
   },
 
   computed: {
-    ...mapGetters(["getChats"])
+    ...mapGetters(["getMessages", "getClient"])
   },
 
   methods: {
     sendMessage(): void {
-      this.socket.sendChat(this.message);
+      const request = {} as Request;
+      request.type = ProtocolType.MESSAGE;
+      request.message = this.message
+      this.getClient.request(request);
+
+      this.message = '';
     }
   },
 
