@@ -1,0 +1,1236 @@
+{
+    "name": "forest",
+    "background": "background_forest",
+    "area": [
+        [
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 0,
+                        "column": 0
+                    },
+                    "resourceId": "house_western_1"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 0,
+                        "column": 1
+                    },
+                    "resourceId": "house_western_2"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 0,
+                        "column": 2
+                    },
+                    "resourceId": "house_western_3"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 0,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 1,
+                        "column": 0
+                    },
+                    "resourceId": "house_western_4"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 1,
+                        "column": 1
+                    },
+                    "resourceId": "house_western_5"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 1,
+                        "column": 2
+                    },
+                    "resourceId": "house_western_6"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 1,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 2,
+                        "column": 0
+                    },
+                    "resourceId": "house_western_7"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 2,
+                        "column": 1
+                    },
+                    "resourceId": "house_western_8"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": {
+                    "fieldRef": {
+                        "row": 2,
+                        "column": 2
+                    },
+                    "resourceId": "house_western_9"
+                }
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 2,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 3,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 4,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 5,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 6,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 7,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 8,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 9,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 10,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ],
+        [
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 0
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 1
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 2
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 3
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 4
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 5
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 6
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 7
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 8
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 9
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 10
+                },
+                "worm": null,
+                "obstacle": null
+            },
+            {
+                "fieldRef": {
+                    "row": 11,
+                    "column": 11
+                },
+                "worm": null,
+                "obstacle": null
+            }
+        ]
+    ]
+}
